@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background: black;
+}
+
+body {
+  width: 21cm;
+  height: 29.7cm;
+  padding: 1cm;
+  margin: auto; 
+  background: white;
+  /* background-image: radial-gradient(black 1px, transparent 0); */
+  background-size: 40px 40px;
+  background-position: -19px -19px;
+  print-color-adjust: exact;
+  display: flex;
+}
+
+/* #root{
+  background-color: white;
+
+  vertical-align: middle;
+} */
+
+
+.circle {
+  border: 2px solid #3182ce;
+  border-radius: 100%;
+  position: relative;
+  width: 2em;
+  height: 2em;
+  margin-right: 0.5rem;
+}
+
+.circle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #3182ce;
+  border-radius: 100%;
+}
