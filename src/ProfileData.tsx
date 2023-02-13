@@ -1,30 +1,34 @@
-import { type } from "os";
-
 type LinkType = {
     link: string,
-    label:string,
+    label: string,
 }
 
-export type ExperienceType ={
+export type ProjectType = {
+    link: string,
+    title: string,
+    description: string,
+}
+
+export type ExperienceType = {
     title: string;
     company: string;
     duration: string;
     data: string[];
 }
 export const mobileNumber = "+91 8076564611";
-export const personName="Bhavyam Kr Goyal";
-export const location="New Delhi";
-export const email="bhavyam.kr.goyal@gmail.com";
-export const github:LinkType={
+export const personName = "Bhavyam Kr Goyal";
+export const location = "New Delhi";
+export const email = "bhavyam.kr.goyal@gmail.com";
+export const github: LinkType = {
     link: "https://github.com/BhavyamGoyal",
     label: "Github"
 };
-export const linkedIn:LinkType={
+export const linkedIn: LinkType = {
     link: "https://www.linkedin.com/in/bhavyam-goyal-3ab948143/",
     label: "LinkedIn"
 };
 
-export const description = `Senior Frontend Developer with 3+ years of experience and significant
+export const description = `<b>Senior Fullstack Developer</b> with 4+ years of experience and significant
 contributions to teams of various sizes and scopes in my organisation.
 Experienced in driving & facilitating projects from concept to launch as
 a development leader. Dedicated to going the extra mile to ensure the
@@ -37,75 +41,89 @@ export const skills = [
     "JavaScript",
     "TypeScript",
     "React",
-    "Next.js",
+    "Node.js",
+    "AWS",
+    "MongoDB",
+    "DynamoDB",
+    "Express.js",
+    "Unity3D",
+    "Web3",
+    "Blockchain",
     "Redux",
     "HTML",
     "CSS",
     "Tailwind",
-    "Styled Components",
     "SCSS",
     "React Native",
-    "Android (Kotlin)",
-    "Firebase",
-    "Node.js",
-    "MongoDB",
+    "Flask",
     "MySQL",
-    "Figma",
-    "Adobe XD",
-    "Service Worker",
+];
+
+export const projectsData: ProjectType[] = [
+    {
+        link: "",
+        title: "Hospital VR Simulation",
+        description: "A hospital Simulation demonstrating GRAF concept used for treating cancer. Displayed in Dr Reddy's International Medical Conference in Hyderabad.",
+    },
+    {
+        link: "",
+        title: "Buzzmed App",
+        description: " A mobile application developed in React Native for medical news, with latest updates in medicine and medical research.",
+    },
+    {
+        link: "https://play.google.com/store/apps/details?id=com.impracticalLabs.fruitBlock&hl=ar&gl=US",
+        title: "FruitBlocks",
+        description: "A casual block game with the right mix of tetris and match 3.",
+    },
+    {
+        link: "https://play.google.com/store/apps/details?id=com.piyushsatija.pollutionmonitor&hl=ar&gl=US",
+        title: "Air Pollution Monitor - AQI ",
+        description: " 17k+ Installs, 4.2 Rating. Open-source Android Application that consumes a JSON API to show the Air Quality Index (AQI), based on GPS Location or Network Location.",
+    }
 ];
 
 export const experienceData: ExperienceType[] = [
-        {
-            title: "Senior Frontend Developer",
-            company: "Amaha (formerly InnerHour)",
-            duration: "Jan 2022 - Present",
-            data: [
-                "Lead a team of 8 junior developers accross multiple projects",
-                "Responsible for the entire feature lifecycle including development, code reviews, deployment and maintenance",
-                "Worked closely with the product team to indentify and set OKRs for each quarter",
-                "Implemented CI/CD pipeline to automate deployments and JIRA for the project management and bug tracking",
-                "Introduced best practices such as code-splitting, unit testing and ESLint",
-            ],
-        },
+    {
+        title: "Fullstack Web3 Developer",
+        company: "Xooa",
+        duration: "Aug 2022 - Present",
+        data: [
+            "Create custumizable plugins for NFT market place.",
+            "Implement web2/blockchain features swap and bid for NFTs.",
+            "Redesign the websites look and feel using low-code/no-code.",
+        ],
+    },
+    {
+        title: "Software Endineer-3",
+        company: "Odico A/S",
+        duration: "May 2020 - July 2022",
+        data: [
+            "Worked on an Ipad application that allows the user to design 3D geometry and cammand a robot to cut it.",
+            "Developed end to end web application to monitor the robotic arms working across Europe.",
+            "Responsible for setting up the CI/CD on AWS service and using github actions",
+        ],
+    },
+    {
+        title: "Game Programmer",
+        company: "Gameshastra",
+        duration: "June 2019 - May 2020",
+        data: [
+            "Develop Song Beats, a multiplayer quiz game on song made in unity.",
+            "Manage and train a small team(3-6) of interns and junior programmers.",
+            "Worked on javascript based apps/games for some client projects."
+        ],
+    },
 
-        {
-            title: "React/React Native Developer",
-            company: "Amaha (formerly InnerHour)",
-            duration: "Aug 2020 - Jan 2022",
-            data: [
-                "Worked on In-App purchases for our paid offerings",
-                "Implemented Network Test for video calls using the OpenTok Network Stats API",
-                "Integrated Moengage library to drive engagement",
-                "Implemented unit tests using jest and react-test-renderer",
-                "Responsible for the entire release cycle including publishing on App Store Connect",
-            ],
-        },
-        {
-            title: "Android Developer",
-            company: "Amaha (formerly InnerHour)",
-            duration: "Sep 2019 - Aug 2020",
-            data: [
-                "Transformed wireframes into reusable components conforming to Material Design guidelines",
-                "Migrated codebase from Monolith Activity Architecture to MVVM",
-                "Refactored modules using AsyncTask to make use of Kotlin coroutines",
-                "Worked on reminder notifications using AlarmManager",
-                "Implemented audio downloads using WorkManager",
-                "Implemented unit tests using JUnit, Mockito and Robolectric",
-            ],
-        },
-
-        {
-            title: "Android Developer Intern",
-            company: "Fotonicia",
-            duration: "Mar 2019 - Sep 2019",
-            data: [
-                "Redesigned the Android app with improved onboarding experience and navigation structure",
-                "Designed & implemented “Refer & Earn” rewards program using Firebase Dynamic Links",
-                "Improved image editing experience and added features",
-            ],
-        },
-    ];
+    {
+        title: "Fullstack Game Developer",
+        company: "Outscal",
+        duration: "Jan 2019 - May 2019",
+        data: [
+            "Design Bow-Master, a multiplayer mobile game using unity 3d and photon.",
+            "Develop a multiplayer mobile rummy game in unity with a backend developed in node.js and deployed on AWS.",
+        ],
+    },
+];
 
 
 export const educationData: {
@@ -113,11 +131,11 @@ export const educationData: {
     degree: string;
     passingYear: string;
 }[] = [{
-    school: "",
-    degree: "",
-    passingYear: "",
+    school: "Jaypee Institute Of Information Technology",
+    degree: "Masters ",
+    passingYear: "2019",
 }, {
-    school: "",
-    degree: "",
-    passingYear: "",
+    school: "ST. Mary’s School",
+    degree: "Senior Secondary",
+    passingYear: "2014",
 }]

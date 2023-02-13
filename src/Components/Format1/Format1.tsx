@@ -3,13 +3,15 @@ import Header from './Header';
 import Skills from './Skills';
 import ExperienceList from './ExperienceList';
 import Education from './Education';
+import PersonalProjects from './PersonalProjects';
 
 function Format1() {
   return (
     <div className="w-full h-screen flex flex-col justify-start items-center">
       <Header/>
-      <Skills/>
       <ExperienceList/>
+      <PersonalProjects/>
+      <Skills/>
       <Education/>
     </div>
   );

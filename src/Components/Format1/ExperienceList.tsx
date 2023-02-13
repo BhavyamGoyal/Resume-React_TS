@@ -11,7 +11,7 @@ const ExperienceList = () => {
                     <Experience
                         key={index}
                         experience={data}
-                        hideBorder={index === experienceData.length - 1}
+                        hideBorder={true}
                     />
                 ))}
             </div>

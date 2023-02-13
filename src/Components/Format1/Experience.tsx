@@ -15,7 +15,7 @@ const Experience = ({ experience, hideBorder }: PropsType) => {
                     <div className="circle" />
                     <div>{title}</div>
                 </div>
-                <div className="text-center">XXX</div>
+                <div className="text-center">{company}</div>
                 <div className="text-end">{duration}</div>
             </div>
             <div

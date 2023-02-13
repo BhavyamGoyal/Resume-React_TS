@@ -5,7 +5,7 @@ const Skills = () => {
         <>
             <div className="flex flex-col  w-full my-4">
                 <div className="text-blue-500 border-b pb-1">Skills</div>
-                <div className="flex gap-4 flex-wrap mt-4">
+                <div className="flex gap-2 flex-wrap mt-4">
                     {skills.map(skill => (
                         <div className="rounded bg-blue-100 text-blue-800 py-1 px-4 text-xs">
                             {skill}
