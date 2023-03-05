@@ -1,4 +1,4 @@
-import { educationData } from "../../ProfileData";
+import { educationData } from "../ProfileData";
 
 function Education() {
     return (

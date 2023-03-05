@@ -8,9 +8,9 @@ html {
 
 body {
   width: 21cm;
-  height: 29.7cm;
-  padding: 1cm;
-  margin: auto; 
+  height: fit-content;
+  padding: 0.7cm;
+  margin: auto;
   background: white;
   /* background-image: radial-gradient(black 1px, transparent 0); */
   background-size: 40px 40px;

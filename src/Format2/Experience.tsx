@@ -1,4 +1,4 @@
-import { experienceData, ExperienceType } from "../../ProfileData";
+import { experienceData, ExperienceType } from "../ProfileData";
 
 type PropsType = {
     experience: ExperienceType;
@@ -6,7 +6,7 @@ type PropsType = {
 }
 
 const Experience = ({ experience, hideBorder }: PropsType) => {
-    const { title, company, duration, data } = experience;
+    const { title, company, duration, project } = experience;
 
     return (
         <>
@@ -24,11 +24,16 @@ const Experience = ({ experience, hideBorder }: PropsType) => {
                     : "border-blue-600 border-l-2"
                     }`}
             >
-                <ul className="ml-4 list-disc text-xs ">
-                    {data.map((item: any) => (
-                        <li>{item}</li>
-                    ))}
-                </ul>
+                {project.map((item: any) => (
+                    <>
+                        <div className="text-s" dangerouslySetInnerHTML={{ __html: item.description }} />
+                        <ul className="ml-4 list-disc text-xs ">
+                            {item.responsibilities.map((item2: any) => (
+                                <li dangerouslySetInnerHTML={{ __html: item2 }}></li>
+                            ))}
+                        </ul>
+                    </>
+                ))}
             </div>
         </>
     );

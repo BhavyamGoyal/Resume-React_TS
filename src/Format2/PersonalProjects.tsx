@@ -1,11 +1,11 @@
-import { projectsData, ProjectType } from "../../ProfileData";
+import { projectsData, ProjectType } from "../ProfileData";
 
 
 const PersonalProjects = () => {
     return (
         <>
             <div className="flex flex-col  w-full mb-4">
-                <div className="text-mastBlue border-b pb-1 text-[14px] mb-2">
+                <div className="text-blue-500 border-b pb-1 mb-2">
                     Personal/Freelance projects
                 </div>
                 <ul>

@@ -1,3 +1,5 @@
+import { type } from "os"
+
 type LinkType = {
     link: string,
     label: string,
@@ -9,11 +11,17 @@ export type ProjectType = {
     description: string,
 }
 
+export type Project = {
+    description: string,
+    responsibilities: string[],
+    techUsed: string
+}
+
 export type ExperienceType = {
     title: string;
+    project: Project[],
     company: string;
     duration: string;
-    data: string[];
 }
 export const mobileNumber = "+91 8076564611";
 export const personName = "Bhavyam Kr Goyal";
@@ -23,6 +31,29 @@ export const github: LinkType = {
     link: "https://github.com/BhavyamGoyal",
     label: "Github"
 };
+export type SkillType = {
+    category: string,
+    skills: string[],
+}
+export type Certificate = {
+    title: LinkType,
+    description: string
+}
+export const certificates: Certificate[] = [{
+    title: {
+        link: "https://www.linkedin.com/in/bhavyam-goyal-3ab948143/",
+        label: "test certi "
+    },
+    description: " - i did this so many e=years ago."
+}, {
+    title: {
+        link: "https://www.linkedin.com/in/bhavyam-goyal-3ab948143/",
+        label: "test certi "
+    },
+    description: " - i did this so many e=years ago."
+}];
+
+
 export const linkedIn: LinkType = {
     link: "https://www.linkedin.com/in/bhavyam-goyal-3ab948143/",
     label: "LinkedIn"
@@ -37,26 +68,19 @@ provided. I look forward to working in an environment that will
 challenge me further; while allowing me to contribute to the continued
 growth and success of the organisation.`
 
-export const skills = [
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Node.js",
-    "AWS",
-    "MongoDB",
-    "DynamoDB",
-    "Express.js",
-    "Unity3D",
-    "Web3",
-    "Blockchain",
-    "Redux",
-    "HTML",
-    "CSS",
-    "Tailwind",
-    "SCSS",
-    "React Native",
-    "Flask",
-    "MySQL",
+export const skills: SkillType[] = [
+    {
+        category: "Tech",
+        skills: ["MERN", "java", "test"]
+    },
+    {
+        category: "Tech",
+        skills: ["MERN", "java", "test"]
+    },
+    {
+        category: "Tech",
+        skills: ["MERN", "java", "test"]
+    }
 ];
 
 export const projectsData: ProjectType[] = [
@@ -86,42 +110,44 @@ export const experienceData: ExperienceType[] = [
     {
         title: "Fullstack Web3 Developer",
         company: "Xooa",
+        project: [
+            {
+                description: "sdfs ds fdsfdsfds s d ds fdsf ds f sgfdsgs ",
+                techUsed: "dfdfdfdfdf, dfdfdf, dfdfd",
+                responsibilities: [
+                    "Create custumizable plugins for NFT market place.",
+                    "Implement web2/blockchain features swap and bid for NFTs.",
+                    "Redesign the websites look and feel using low-code/no-code.",
+                ],
+            },
+        ],
         duration: "Aug 2022 - Present",
-        data: [
-            "Create custumizable plugins for NFT market place.",
-            "Implement web2/blockchain features swap and bid for NFTs.",
-            "Redesign the websites look and feel using low-code/no-code.",
-        ],
-    },
-    {
-        title: "Software Endineer-3",
-        company: "Odico A/S",
-        duration: "May 2020 - July 2022",
-        data: [
-            "Worked on an Ipad application that allows the user to design 3D geometry and cammand a robot to cut it.",
-            "Developed end to end web application to monitor the robotic arms working across Europe.",
-            "Responsible for setting up the CI/CD on AWS service and using github actions",
-        ],
-    },
-    {
-        title: "Game Programmer",
-        company: "Gameshastra",
-        duration: "June 2019 - May 2020",
-        data: [
-            "Develop Song Beats, a multiplayer quiz game on song made in unity.",
-            "Manage and train a small team(3-6) of interns and junior programmers.",
-            "Worked on javascript based apps/games for some client projects."
-        ],
-    },
 
+    },
     {
-        title: "Fullstack Game Developer",
-        company: "Outscal",
-        duration: "Jan 2019 - May 2019",
-        data: [
-            "Design Bow-Master, a multiplayer mobile game using unity 3d and photon.",
-            "Develop a multiplayer mobile rummy game in unity with a backend developed in node.js and deployed on AWS.",
+        title: "Fullstack Web3 Developer",
+        company: "Xooa",
+        project: [
+            {
+                description: "sdfs ds <b>fdsfdsfds</b> s d ds fdsf ds f sgfdsgs Create custumizable plugins for NFT market place.Create custumizable plugins for NFT market place.Create custumizable plugins for NFT market place.Create custumizable plugins for NFT market place.Create custumizable plugins for NFT market place.",
+                techUsed: "dfdfdfdfdf, dfdfdf, dfdfd",
+                responsibilities: [
+                    "Create custumizable plugins for NFT market place.Create custumizable plugins for NFT market place.Create custumizable plugins for NFT market place.Create custumizable plugins for NFT market place.Create custumizable plugins for NFT market place.Create custumizable plugins for NFT market place.",
+                    "Implement web2/blockchain features swap and bid for NFTs.",
+                    "Redesign the websites look and feel using low-code/no-code.",
+                ],
+            },
+            {
+                description: "sdfs ds fdsfdsfds s d ds fdsf ds f sgfdsgs ",
+                techUsed: "dfdfdfdfdf, dfdfdf, dfdfd",
+                responsibilities: [
+                    "Create custumizable plugins for NFT market place.",
+                    "Implement web2/blockchain features swap and bid for NFTs.",
+                    "Redesign the websites look and feel using low-code/no-code.",
+                ],
+            },
         ],
+        duration: "Aug 2022 - Present",
     },
 ];
 

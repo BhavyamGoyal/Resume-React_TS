@@ -1,4 +1,4 @@
-import { email, github, personName, linkedIn, location, mobileNumber,description } from "../../ProfileData";
+import { email, github, personName, linkedIn, location, mobileNumber,description } from "../ProfileData";
 
 function Header() {
     return (
