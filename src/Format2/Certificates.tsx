@@ -16,6 +16,7 @@ const Skills = () => {
                                         className="text-blue-300  underline"
                                     >
                                     </a>
+                                    <div className="ml-1 mr-1">-</div>
                                     <div dangerouslySetInnerHTML={{ __html: certificate.description }}></div>
                                 </div>
                             </li>

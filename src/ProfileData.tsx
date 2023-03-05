@@ -44,13 +44,13 @@ export const certificates: Certificate[] = [{
         link: "https://www.linkedin.com/in/bhavyam-goyal-3ab948143/",
         label: "test certi "
     },
-    description: " - i did this so many e=years ago."
+    description: "i did this so many e=years ago."
 }, {
     title: {
         link: "https://www.linkedin.com/in/bhavyam-goyal-3ab948143/",
         label: "test certi "
     },
-    description: " - i did this so many e=years ago."
+    description: "i did this so many e=years ago."
 }];
 
 
