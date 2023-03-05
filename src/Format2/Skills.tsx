@@ -9,8 +9,11 @@ const Skills = () => {
                     {skills.map(skill => (
                         <div className="flex text-xs rounded bg-blue-100 text-blue-800 py-1 px-4 text-xs ">
                             <div style={{ fontWeight: "bold" }} className="mr-1" dangerouslySetInnerHTML={{ __html: skill.category }}></div>:
-                            {skill.skills.map(skillList => (
-                                <div className="ml-1 " dangerouslySetInnerHTML={{ __html: skillList + "," }}></div>))}
+                            {skill.skills.map((skillList, index) => (
+                                <div className="flex">
+                                    <div className="ml-1 " dangerouslySetInnerHTML={{ __html: skillList }}></div>
+                                    {skill.skills.length - 1 !== index && <div>,</div>}
+                                </div>))}
                         </div>
                     ))}
 
