@@ -17,7 +17,7 @@ const Skills = () => {
                                     >
                                     </a>
                                     <div className="ml-1 mr-1">-</div>
-                                    <div dangerouslySetInnerHTML={{ __html: certificate.description }}></div>
+                                    <div className="ml-1" dangerouslySetInnerHTML={{ __html: certificate.description }}></div>
                                 </div>
                             </li>
                         ))}
